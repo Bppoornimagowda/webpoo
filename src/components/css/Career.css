@@ -1,8 +1,8 @@
 .career-container {
-    padding-top: 82px;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    padding: 0;
+    padding: 120px 0 0 0;
+    box-sizing: border-box;
     margin: 0;
     position: relative;
     background-image: url('../../assets/images/bg-img4.png');
@@ -252,12 +252,11 @@
 }
 
 .career-content {
-  padding: 180px 2rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 3;
-  color: #ffffff;
+    width: 100%;
+    max-width: 1265px;
+    margin: 0 auto;
+    padding: 0 2vw;
+    box-sizing: border-box;
 }
 
 .page-title {
@@ -327,12 +326,26 @@
   z-index: 0;
 }
 
-.box-content {
-  text-align: center;
-  padding: 1.5rem;
+.bottom-box .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw;
   width: 100%;
-  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.box-content {
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
   margin: 0 auto;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  background: rgba(10, 12, 30, 0.85);
+  box-shadow: 0 0 32px 8px #3a8bfd33;
+  padding: 48px 32px 40px 32px;
+  box-sizing: border-box;
   position: relative;
   z-index: 3;
 }
@@ -548,4 +561,25 @@
   .modal-box h2 {
     font-size: 1.5rem;
   }
-} 
+}
+
+.careers-content, .home-content, .about-content, .blog-content-wrapper {
+  width: 100%;
+  padding: 2vw;
+  box-sizing: border-box;
+  /* Remove max-width and margin if you want full width */
+}
+
+.container {
+  width: 100%;
+  max-width: 1265px;
+  margin: 0 auto;
+  padding: 0 2vw;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px;
+  }
+}

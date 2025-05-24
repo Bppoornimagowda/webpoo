@@ -1,13 +1,14 @@
 .blog-container {
+  width: 100vw;
   min-height: 100vh;
-  width: 100%;
+  padding: 120px 0 0 0; /* Top padding for fixed header */
+  box-sizing: border-box;
+  overflow-x: hidden;
   background-image: url('../../assets/images/bg-img4.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  overflow-y: auto;
-  padding: 100px 0;
 }
 
 /* Add network effect overlay */
@@ -27,9 +28,11 @@
 }
 
 .blog-content-wrapper {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1400px; /* Or 100vw for full width */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2vw; /* Responsive padding */
+  box-sizing: border-box;
   position: relative;
   z-index: 2;
 }

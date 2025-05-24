@@ -10,11 +10,13 @@ import Values from './components/js/Values';
 import Strategy from './components/js/Strategy';
 import Careers from './components/js/Careers';
 import Blog from './components/js/Blog';
+import ScrollToTop from './components/ScrollToTop';
   
 function App() {
   return (
     <Router>
-    <div className="App">
+      <ScrollToTop />
+      <div className="App">
         <Header />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
@@ -29,7 +31,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />   
         </Routes>
         <Footer />
-    </div>
+      </div>
     </Router>
   );
 }

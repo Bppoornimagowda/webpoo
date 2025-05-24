@@ -1,10 +1,14 @@
 .header {
-  padding: 1rem 0;
-  position: fixed;
   width: 100%;
   left: 0;
+  right: 0;
   top: 0;
+  position: fixed;
   z-index: 10;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  box-sizing: border-box;
   color: #CCE6FF;
   transition: none;
   box-shadow: none;
@@ -15,18 +19,26 @@
   backdrop-filter: blur(10px);
   box-shadow: none;
   border: none;
-  width: 99%;
-  margin-left: 10px;
+  width: 100%;
+  
 }
 
 .header-container {
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2vw;
+  box-sizing: border-box;
 }
 
 .logo-container {
@@ -218,10 +230,6 @@
     padding: 1rem;
   }
   
-  .header-container {
-    padding: 0 1rem;
-  }
-
   .hamburger {
     display: flex;
     z-index: 2000;
@@ -360,10 +368,6 @@
 }
 
 @media (max-width: 480px) {
-  .header-container {
-    padding: 0 0.8rem;
-  }
-
   .logo {
     height: 40px;
   }
@@ -383,4 +387,10 @@
   border: none;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   transition: background 0.2s, color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .header .container, .container {
+    padding: 0 12px;
+  }
 } 

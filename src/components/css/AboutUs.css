@@ -1,11 +1,14 @@
 .about-container {
-  padding-top: 60px;
-  min-height: 100vh;
   width: 100%;
-  margin: 0;
+  min-height: 100vh;
+  padding:120px 0 0 0 ;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
-  background-color: #000000;
-  overflow: hidden;
 }
 
 .about-header {
@@ -49,10 +52,10 @@
 
 .about-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
-  margin-top: 30px;
+  padding: 2vw;
+  box-sizing: border-box;
 }
 
 .about-image-section {
@@ -104,7 +107,7 @@
   font-weight: 100;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-  font-family: serif;
+  font-family: 'Urbanist';
   max-width: 900px;
 }
 
